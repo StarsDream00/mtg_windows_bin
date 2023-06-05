@@ -1,6 +1,6 @@
 name: 构建
 
-on: ["workflow_dispatch"]
+on: workflow_dispatch
 
 jobs:
   build:
@@ -15,4 +15,4 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          path: ./go
+          path: ./
